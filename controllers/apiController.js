@@ -30,7 +30,6 @@ class ApiController {
         } catch (error) {
             res.status(400).json(error)
         }
-        res.status(201).send('Esto es una api put') 
     }
     async borrar (req, res) {
         await Ingredientes.findByIdAndDelete(req.params.id)
