@@ -19,7 +19,7 @@ class ApiController {
     }
     async buscarPorId(req, res){
         const ingredientes= await Ingredientes.findById(req.params.id)
-        res.status(200).json(series)
+        res.status(200).json(ingredientes)
     }
     async editar (req, res) {
         try {
